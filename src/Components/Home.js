@@ -1,4 +1,4 @@
-import { Title, Container, Content, colors, MadziaContainer } from "../Styles";
+import { Title, Container, Content, MadziaContainer } from "../Styles";
 import Comment from "./Comment";
 import madzia from "../Pictures/madzia.png";
 

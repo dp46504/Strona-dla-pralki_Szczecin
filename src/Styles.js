@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { NavLink } from "react-router-dom";
+import pralkaImage from "./Pictures/machine1.jpg";
 
 const mobileDesktop = "426px";
 
@@ -26,8 +27,18 @@ a{
   font-weight:bold;
 }
 
-html,body {margin: 0; height: 100%; overflow: auto}
-
+html,body {
+  margin: 0;
+  height: 100%;
+  overflow: auto;
+  background-image: url(${pralkaImage});
+  background-position: center center;
+  background-repeat: no-repeat;
+  @media screen and (max-width: ${mobileDesktop}){
+    background-image: none;
+  }
+  }
+  
   @media screen and (max-width: ${mobileDesktop}){
     :root{font-size:20px;}
   }
@@ -65,6 +76,7 @@ export const MenuItem = styled(NavLink)`
 
 export const MenuBarBox = styled.div`
   display: flex;
+
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -133,13 +145,17 @@ export const LineBurger = styled.div`
 
 export const Container = styled.div`
   display: flex;
+  background-color: white;
+  padding: 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50%;
   margin: 0 auto;
+
   @media screen and (max-width: ${mobileDesktop}) {
     width: 80%;
+    padding: 0;
   }
 `;
 
@@ -243,9 +259,9 @@ export const Input = styled.input`
   font-size: 1.2rem;
   text-align: center;
   transition: top 300ms, left 300ms;
-  &:last-of-type {
+  /* &:last-of-type {
     height: 20vh;
-  }
+  } */
   &:first-of-type {
     margin-top: 5vh;
   }
@@ -275,7 +291,9 @@ export const Button = styled.a`
   text-decoration: none;
 `;
 export const MadziaContainer = styled.div`
+  background-color: white;
   display: flex;
+  /* border-top: 0.15rem solid ${colors.blue}; */
   padding: 0 5vw 3vh 5vw;
   margin: 0 auto;
   flex-direction: column;
@@ -283,7 +301,7 @@ export const MadziaContainer = styled.div`
   width: 50%;
 
   & img {
-    width: 100%;
+    width: 30%;
     align-self: center;
   }
 
@@ -309,13 +327,13 @@ export const MadziaContainer = styled.div`
   @media screen and (max-width: ${mobileDesktop}) {
     & img {
       width: 100%;
-      border: 0.3rem solid ${colors.lightBlue};
+      border: 0.2rem solid ${colors.lightBlue};
     }
     & ${Content} {
       font-size: 1rem;
     }
 
     width: 80%;
-    background-color: ${colors.a};
+    /* background-color: ${colors.a}; */
   }
 `;

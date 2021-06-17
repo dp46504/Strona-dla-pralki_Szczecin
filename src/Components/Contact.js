@@ -1,16 +1,11 @@
 import { useState } from "react";
-import { Title, Content, Container, Button, Input, colors } from "../Styles";
+import { Title, Content, Container, Button, Input } from "../Styles";
 function Contact() {
   const [imieNazwisko, setImieNazwisko] = useState("");
-  const [mail, setMail] = useState("");
   const [tresc, setTresc] = useState("");
 
   const onChangeName = (e) => {
     setImieNazwisko(e.target.value);
-  };
-
-  const onChangeMail = (e) => {
-    setMail(e.target.value);
   };
 
   const onChangeTresc = (e) => {
@@ -39,12 +34,6 @@ function Contact() {
         placeholder="Imie i nazwisko"
         onChange={onChangeName}
       />
-      {/* <Input
-        type="text"
-        name="Email"
-        placeholder="Email"
-        onChange={onChangeMail}
-      /> */}
       <Input
         type="text"
         name="Tresc"
@@ -52,7 +41,7 @@ function Contact() {
         onChange={onChangeTresc}
       />
       <Button
-        href={`mailto:kissonion24@gmail.com?subject=Naprawa pytanie&body=${encodeURI(
+        href={`mailto:meteor.pb@op.pl?subject=Naprawa pytanie (${imieNazwisko})&body=${encodeURI(
           tresc
         )}`}
       >

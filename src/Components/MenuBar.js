@@ -4,6 +4,7 @@ import BurgerMenuIcon from "../cssIcons/BurgerMenuIcon";
 import gsap from "gsap";
 
 function MenuBar(props) {
+  // eslint-disable-next-line
   const [winWidth, setWinWidth] = useState(window.innerWidth);
   const menuBarBox = useRef(null);
   let isMenuVisible = window.innerWidth <= 426 ? false : true;
@@ -54,9 +55,12 @@ function MenuBar(props) {
         <MenuItem activeStyle={activeCSS} exact to="/">
           Główna
         </MenuItem>
-        <MenuItem activeStyle={activeCSS} to="/models">
+        {/* <MenuItem activeStyle={activeCSS} to="/models">
           Modele
-        </MenuItem>
+        </MenuItem> */}
+        {/* <MenuItem activeStyle={activeCSS} to="/guestbook">
+          Księga gości
+        </MenuItem> */}
         <MenuItem activeStyle={activeCSS} to="/contact">
           Kontakt
         </MenuItem>

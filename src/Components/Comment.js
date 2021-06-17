@@ -1,5 +1,4 @@
 import { CommentBox, CommentContent, Author } from "../Styles";
-import gsap from "gsap";
 
 function Comment(props) {
   console.log(props);

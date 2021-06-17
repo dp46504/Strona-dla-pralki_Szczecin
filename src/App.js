@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // Import Components
 import Contact from "./Components/Contact";
 import Home from "./Components/Home";
-import Models from "./Components/Models";
+// import Models from "./Components/Models";
 import MenuBar from "./Components/MenuBar";
 // Import Styles
-import { colors, GlobalStyle, Title } from "./Styles";
+import { GlobalStyle, Title } from "./Styles";
 import { LogoBar } from "./Styles";
 import { useEffect, useState } from "react";
 // Import Icons/Pictures
@@ -47,7 +47,7 @@ function App() {
         <MenuBar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/models" component={Models} />
+          {/* <Route path="/models" component={Models} /> */}
           <Route path="/contact" component={Contact} />
         </Switch>
       </Router>

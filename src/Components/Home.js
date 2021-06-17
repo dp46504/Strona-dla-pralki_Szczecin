@@ -1,6 +1,6 @@
 import { Title, Container, Content, MadziaContainer } from "../Styles";
 import Comment from "./Comment";
-import madzia from "../Pictures/madzia.png";
+import madzia from "../Pictures/magda.png";
 
 function Home() {
   return (
@@ -16,7 +16,6 @@ function Home() {
           Naprawa pralki może być bardzo kosztowna. Zanim przystąpię do naprawy
           poinformuję Ciebie o kosztach.
         </Content>
-        <Title>Pobieram opłatę za dojazd 20 zł!</Title>
         <br></br>
         <br></br>
         <Title>Opinie klientów:</Title>
@@ -43,12 +42,12 @@ function Home() {
         </Comment>
       </Container>
       <MadziaContainer>
-        <img src={madzia} alt="madzia" />
         <Title>
           Nazywam się<br></br>MAGDALENA BOROŃ
         </Title>
         <Content>Przekaż na mnie 1% podatku</Content>
         <Title>KRS 0000037904</Title>
+        <img src={madzia} alt="madzia" />
         <Content>
           W rubryce "Informacje uzupełniające - cel szczegółowy 1%" podaj:
         </Content>

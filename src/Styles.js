@@ -186,7 +186,7 @@ export const CommentBox = styled.div`
   align-items: center;
   transition: transform 300ms;
   &:hover {
-    transform: translateX(20px);
+    transform: translateX(.5rem);
   }
   @media screen and (max-width: ${mobileDesktop}) {
     &:hover {

@@ -16,8 +16,8 @@ function Contact() {
       <Title>Pralki Szczecin - kontakt</Title>
       <Content>
         e-mail:{" "}
-        <a style={{ textDecoration: "none" }} href="mailto:meteor.pb@op.pl">
-          meteor.pb@op.pl
+        <a style={{ textDecoration: "none" }} href="mailto:meteor.pb@onet.pl">
+          meteor.pb@onet.pl
         </a>
       </Content>
       <Content>
@@ -41,7 +41,7 @@ function Contact() {
         onChange={onChangeTresc}
       />
       <Button
-        href={`mailto:meteor.pb@op.pl?subject=Naprawa pytanie (${imieNazwisko})&body=${encodeURI(
+        href={`mailto:meteor.pb@onet.pl?subject=Naprawa pytanie (${imieNazwisko})&body=${encodeURI(
           tresc
         )}`}
       >
